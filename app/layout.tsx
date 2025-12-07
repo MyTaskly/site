@@ -66,6 +66,10 @@ export const metadata = {
     telephone: false,
   },
   metadataBase: new URL('https://mytaskly.com'),
+  icons: {
+    icon: '/images/mytaskly-logo.ico',
+    shortcut: '/images/mytaskly-logo.ico',
+  },
   openGraph: {
     title: 'MyTaskly - App Todo List Minimalista con IA',
     description: "MyTaskly è un'app Todo List elegante che integra l'intelligenza artificiale per semplificare la gestione delle attività quotidiane",
@@ -152,7 +156,7 @@ export default function RootLayout({
           type="font/woff2" 
           crossOrigin="anonymous" 
         />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/images/mytaskly-logo.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
         
