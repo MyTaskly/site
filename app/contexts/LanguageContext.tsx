@@ -1075,90 +1075,90 @@ const translations: Record<Language, Record<string, string>> = {
       "Inizia ad usare la beta e goditi tutte le funzionalità! 🎉",
 
     // Open Source Page
-    "openSource.hero.badge": "Open Source senza compromessi",
-    "openSource.hero.badgeSubtitle": "Creata da un 16enne in 11 mesi",
-    "openSource.hero.pretitle": "Mytaskly è aperta a tutti",
+    "openSource.hero.badge": "Open Source without compromise",
+    "openSource.hero.badgeSubtitle": "Built by a 16-year-old in 11 months",
+    "openSource.hero.pretitle": "MyTaskly is open to everyone",
     "openSource.hero.title":
-      "MyTaskly è open source, sviluppata in 11 mesi da un ragazzo di 16 anni e pronta per essere migliorata da chiunque.",
+      "MyTaskly is open source, developed in 11 months by a 16-year-old and ready to be improved by anyone.",
     "openSource.hero.description":
-      "Abbiamo scelto l'open source per rendere trasparente ogni scelta tecnologica e invitare la community a costruire insieme la migliore esperienza di produttività vocale. Ogni commit racconta la determinazione di chi ha dedicato quasi un anno per portare questa visione alla vita.",
-    "openSource.hero.ctaRepositories": "Esplora le repository",
-    "openSource.hero.ctaMCP": "Scopri l'MCP ufficiale",
-    "openSource.hero.whyTitle": "Trasparenza, fiducia e integrazione ovunque",
+      "We chose open source to make every technical decision transparent and invite the community to build together the best voice productivity experience. Every commit tells the story of the determination of someone who dedicated nearly a year to bring this vision to life.",
+    "openSource.hero.ctaRepositories": "Explore repositories",
+    "openSource.hero.ctaMCP": "Discover the official MCP",
+    "openSource.hero.whyTitle": "Transparency, trust, and integration everywhere",
     "openSource.hero.whyDescription":
-      "MyTaskly nasce come progetto personale di un sedicenne e diventa una piattaforma aperta: questo garantisce revisione pubblica, miglioramenti continui e la libertà di integrare l'assistente vocale nei tuoi flussi.",
+      "MyTaskly started as a personal project by a sixteen-year-old and became an open platform: this guarantees public review, continuous improvements, and the freedom to integrate the voice assistant into your workflows.",
     "openSource.hero.tag1": "Community-first",
-    "openSource.hero.tag2": "Licenza aperta",
-    "openSource.hero.tag3": "MCP incluso",
+    "openSource.hero.tag2": "Open license",
+    "openSource.hero.tag3": "MCP included",
 
-    "openSource.advantages.pretitle": "Vantaggi reali",
-    "openSource.advantages.title": "Perché MyTaskly è open source",
+    "openSource.advantages.pretitle": "Real advantages",
+    "openSource.advantages.title": "Why MyTaskly is open source",
     "openSource.advantages.description":
-      "Rendere pubblica la base di codice è la scelta più coerente con la nostra missione: offrire un assistente vocale di produttività etico, controllabile e potenziato dalla forza della community.",
-    "openSource.advantages.transparency.title": "Trasparenza totale",
+      "Making the codebase public is the most consistent choice with our mission: to offer an ethical, controllable voice productivity assistant empowered by the strength of the community.",
+    "openSource.advantages.transparency.title": "Full transparency",
     "openSource.advantages.transparency.description":
-      "Codice aperto e consultabile da chiunque: sai sempre come vengono gestiti dati, algoritmi e modelli IA, senza segreti nascosti.",
-    "openSource.advantages.community.title": "Affidabilità di comunità",
+      "Open and reviewable code by anyone: you always know how data, algorithms, and AI models are handled, with no hidden secrets.",
+    "openSource.advantages.community.title": "Community reliability",
     "openSource.advantages.community.description":
-      "Chiunque può proporre miglioramenti, segnalare bug e contribuire con nuove idee: MyTaskly cresce più velocemente grazie a contributi reali.",
-    "openSource.advantages.customization.title": "Personalizzazione libera",
+      "Anyone can suggest improvements, report bugs, and contribute new ideas: MyTaskly grows faster thanks to real contributions.",
+    "openSource.advantages.customization.title": "Free customization",
     "openSource.advantages.customization.description":
-      "Forka, adatta e distribuisci la tua versione: l'open source ti permette di creare esattamente l'esperienza di produttività che cerchi.",
+      "Fork, adapt, and distribute your own version: open source allows you to create exactly the productivity experience you're looking for.",
 
-    "openSource.mcp.badge": "MCP ufficiale",
-    "openSource.mcp.title": "Integra MyTaskly ovunque grazie all'MCP",
+    "openSource.mcp.badge": "Official MCP",
+    "openSource.mcp.title": "Integrate MyTaskly everywhere with the MCP",
     "openSource.mcp.description":
-      "L'MCP di MyTaskly rende l'assistente accessibile da agent, workflow personalizzati e tool interni. È open source, documentato e pronto per essere adattato a qualsiasi stack, dal tuo CRM alle automazioni no-code.",
-    "openSource.mcp.feature1Title": "Integrazione immediata",
+      "MyTaskly's MCP makes the assistant accessible from agents, custom workflows, and internal tools. It's open source, documented, and ready to be adapted to any stack, from your CRM to no-code automations.",
+    "openSource.mcp.feature1Title": "Instant integration",
     "openSource.mcp.feature1Description":
-      "Endpoint chiari e esempi già pronti per collegare MyTaskly a bot, dashboard e flussi vocali.",
-    "openSource.mcp.feature2Title": "Contributi benvenuti",
+      "Clear endpoints and ready-made examples to connect MyTaskly to bots, dashboards, and voice workflows.",
+    "openSource.mcp.feature2Title": "Contributions welcome",
     "openSource.mcp.feature2Description":
-      "Issue, PR e proposte di nuove capability MCP sono incoraggiate: la community guida la roadmap.",
-    "openSource.mcp.highlight": "Dal codice al tuo ecosistema",
+      "Issues, PRs, and proposals for new MCP capabilities are encouraged: the community drives the roadmap.",
+    "openSource.mcp.highlight": "From code to your ecosystem",
     "openSource.mcp.highlightSubtitle":
-      "Open source significa libertà di integrare senza barriere",
+      "Open source means freedom to integrate without barriers",
     "openSource.mcp.benefit1":
-      "SDK e esempi pronti all'uso per agent AI e workflow vocali.",
+      "SDKs and ready-to-use examples for AI agents and voice workflows.",
     "openSource.mcp.benefit2":
-      "Documentazione aperta e migliorabile via PR dalla community.",
+      "Open documentation that can be improved via PRs from the community.",
     "openSource.mcp.benefit3":
-      "Compatibilità pensata per cloud, self-hosting e tool no-code.",
-    "openSource.mcp.button": "Vai al repository MCP",
+      "Compatibility designed for cloud, self-hosting, and no-code tools.",
+    "openSource.mcp.button": "Go to the MCP repository",
 
-    "openSource.mcp.comingSoon.badge": "In arrivo",
+    "openSource.mcp.comingSoon.badge": "Coming soon",
     "openSource.mcp.comingSoon.title":
-      "L'MCP ufficiale di MyTaskly è quasi pronto",
+      "MyTaskly's official MCP is almost ready",
     "openSource.mcp.comingSoon.description":
-      "Stiamo ultimando gli ultimi dettagli del nostro Model Context Protocol ufficiale per renderlo il più potente e facile da integrare possibile. Presto potrai usare MyTaskly in agent IA, automazioni e workflow personalizzati senza limitazioni.",
-    "openSource.mcp.comingSoon.feature1Title": "Endpoint reali",
+      "We're finalizing the last details of our official Model Context Protocol to make it as powerful and easy to integrate as possible. Soon you'll be able to use MyTaskly in AI agents, automations, and custom workflows without limitations.",
+    "openSource.mcp.comingSoon.feature1Title": "Real endpoints",
     "openSource.mcp.comingSoon.feature1Subtitle": "API documentation",
-    "openSource.mcp.comingSoon.feature2Title": "SDK multi-linguaggio",
+    "openSource.mcp.comingSoon.feature2Title": "Multi-language SDKs",
     "openSource.mcp.comingSoon.feature2Subtitle": "Python, JS, Go",
-    "openSource.mcp.comingSoon.feature3Title": "Esempi pronti",
-    "openSource.mcp.comingSoon.feature3Subtitle": "Deploy in 5 minuti",
+    "openSource.mcp.comingSoon.feature3Title": "Ready examples",
+    "openSource.mcp.comingSoon.feature3Subtitle": "Deploy in 5 minutes",
     "openSource.mcp.comingSoon.cta":
-      "Iscriviti per ricevere un notifica appena sarà disponibile",
+      "Sign up to get notified as soon as it's available",
 
-    "openSource.repos.pretitle": "Repository pubbliche",
-    "openSource.repos.title": "Contribuisci, studia, integra",
+    "openSource.repos.pretitle": "Public repositories",
+    "openSource.repos.title": "Contribute, study, integrate",
     "openSource.repos.description":
-      "Troverai il codice aperto su repository dedicate: sostituisci i link placeholder con quelli ufficiali e inizia a contribuire. Ogni issue o PR aiuta un giovane founder di 16 anni a crescere insieme al progetto.",
-    "openSource.repos.badge": "Repo aperta",
-    "openSource.repos.repo1Title": "Repository principale di MyTaskly",
+      "You'll find the open code in dedicated repositories: replace the placeholder links with the official ones and start contributing. Every issue or PR helps a young 16-year-old founder grow alongside the project.",
+    "openSource.repos.badge": "Open repo",
+    "openSource.repos.repo1Title": "MyTaskly main repository",
     "openSource.repos.repo1Description":
-      "Il cuore dell'app, pronta per essere studiata, forkata e migliorata dalla community.",
-    "openSource.repos.repo2Title": "Interfaccia web e landing",
+      "The heart of the app, ready to be studied, forked, and improved by the community.",
+    "openSource.repos.repo2Title": "Web interface and landing page",
     "openSource.repos.repo2Description":
-      "La base del sito e dell'esperienza web: perfetta per contribuire a UI, accessibilità e performance.",
-    "openSource.repos.repo3Title": "MCP di MyTaskly",
+      "The foundation of the website and web experience: perfect for contributing to UI, accessibility, and performance.",
+    "openSource.repos.repo3Title": "MyTaskly MCP",
     "openSource.repos.repo3Description":
-      "Il connettore ufficiale per integrare MyTaskly in automazioni, agent e strumenti personalizzati.",
-    "openSource.repos.buttonText": "Apri la repository",
+      "The official connector to integrate MyTaskly into automations, agents, and custom tools.",
+    "openSource.repos.buttonText": "Open the repository",
     "openSource.repos.footerTitle":
-      "MyTaskly nasce dalla passione di un sedicenne",
+      "MyTaskly was born from the passion of a sixteen-year-old",
     "openSource.repos.footerDescription":
-      "Dopo 11 mesi di lavoro costante, il codice è aperto per permettere a chiunque di verificarlo, migliorarlo e integrarlo. Se ami la produttività open source, questo è il momento di unirti.",
+      "After 11 months of constant work, the code is open for anyone to review, improve, and integrate. If you love open source productivity, now is the time to join.",
   },
   it: {
     // Header
