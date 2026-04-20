@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://mytasklyapp.com
-
-# Sitemaps
-Sitemap: https://mytasklyapp.com/sitemap.xml
