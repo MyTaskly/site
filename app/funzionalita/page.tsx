@@ -99,7 +99,7 @@ export default function FunzionalitaPage() {
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
-              href="#"
+              href="/download"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-4 text-base font-medium text-background transition-transform hover:-translate-y-0.5"
             >
               Scarica gratis
