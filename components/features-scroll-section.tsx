@@ -132,7 +132,7 @@ export function FeaturesScrollSection() {
           {/* Sticky phone */}
           <div className="order-1 lg:order-2 lg:col-span-5 xl:col-span-6">
             <div className="lg:sticky lg:top-0 lg:flex lg:h-screen lg:items-center lg:justify-center">
-              <div className="relative mx-auto w-full max-w-sm">
+              <div className="relative mx-auto w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[320px] xl:max-w-[340px]">
                 <div className="relative overflow-hidden rounded-[2.5rem] border-[12px] border-foreground bg-foreground shadow-2xl">
                   <div className="relative aspect-[9/19.5] w-full overflow-hidden rounded-[1.75rem] bg-background">
                     {features.map((feature, index) => (

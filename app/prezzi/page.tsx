@@ -2,6 +2,7 @@ import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import Link from "next/link"
 import { Check } from "lucide-react"
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion"
 
 const plans = [
   {
@@ -10,7 +11,7 @@ const plans = [
     period: "per sempre",
     description: "Prova MyTaskly senza impegno.",
     cta: { label: "Inizia gratis", href: "/download" },
-    highlighted: false,
+    highlighted: true,
     features: [
       { text: "20 messaggi testo / giorno", included: true },
       { text: "130 messaggi testo / mese", included: true },
@@ -20,38 +21,38 @@ const plans = [
       { text: "Fino a 5 categorie", included: true },
     ],
   },
-  {
-    name: "Pro",
-    price: "4,99€",
-    period: "/mese",
-    description: "Per chi usa MyTaskly ogni giorno.",
-    cta: { label: "Inizia con Pro", href: "/download" },
-    highlighted: true,
-    features: [
-      { text: "50 messaggi testo / giorno", included: true },
-      { text: "250 messaggi testo / mese", included: true },
-      { text: "Chat vocale inclusa", included: true },
-      { text: "50 messaggi vocali / mese", included: true },
-      { text: "Modello AI avanzato", included: true },
-      { text: "Categorie illimitate", included: true },
-    ],
-  },
-  {
-    name: "Premium",
-    price: "9,99€",
-    period: "/mese",
-    description: "Senza limiti, per chi vuole tutto.",
-    cta: { label: "Inizia con Premium", href: "/download" },
-    highlighted: false,
-    features: [
-      { text: "Messaggi testo illimitati / giorno", included: true },
-      { text: "400 messaggi testo / mese", included: true },
-      { text: "Chat vocale inclusa", included: true },
-      { text: "150 messaggi vocali / mese", included: true },
-      { text: "Modello AI avanzato", included: true },
-      { text: "Categorie illimitate", included: true },
-    ],
-  },
+  // {
+  //   name: "Pro",
+  //   price: "4,99€",
+  //   period: "/mese",
+  //   description: "Per chi usa MyTaskly ogni giorno.",
+  //   cta: { label: "Inizia con Pro", href: "/download" },
+  //   highlighted: true,
+  //   features: [
+  //     { text: "50 messaggi testo / giorno", included: true },
+  //     { text: "250 messaggi testo / mese", included: true },
+  //     { text: "Chat vocale inclusa", included: true },
+  //     { text: "50 messaggi vocali / mese", included: true },
+  //     { text: "Modello AI avanzato", included: true },
+  //     { text: "Categorie illimitate", included: true },
+  //   ],
+  // },
+  // {
+  //   name: "Premium",
+  //   price: "9,99€",
+  //   period: "/mese",
+  //   description: "Senza limiti, per chi vuole tutto.",
+  //   cta: { label: "Inizia con Premium", href: "/download" },
+  //   highlighted: false,
+  //   features: [
+  //     { text: "Messaggi testo illimitati / giorno", included: true },
+  //     { text: "400 messaggi testo / mese", included: true },
+  //     { text: "Chat vocale inclusa", included: true },
+  //     { text: "150 messaggi vocali / mese", included: true },
+  //     { text: "Modello AI avanzato", included: true },
+  //     { text: "Categorie illimitate", included: true },
+  //   ],
+  // },
 ]
 
 export default function PricingPage() {
@@ -68,11 +69,11 @@ export default function PricingPage() {
             Inizia gratis. Scala quando ti serve.
           </p>
 
-          <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-16 flex justify-center">
             {plans.map((plan) => (
               <div
                 key={plan.name}
-                className={`relative flex flex-col rounded-2xl border p-8 text-left ${
+                className={`relative w-full max-w-md flex flex-col rounded-2xl border p-8 text-left ${
                   plan.highlighted
                     ? "border-foreground bg-foreground text-background"
                     : "border-border bg-background"
@@ -128,6 +129,50 @@ export default function PricingPage() {
                 </ul>
               </div>
             ))}
+          </div>
+
+          <div className="mt-16 text-center">
+            <p className="text-xl font-medium text-foreground italic">
+              Funzionalità premium in arrivo...
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-border/60 bg-background py-24">
+        <div className="mx-auto max-w-3xl px-6 lg:px-10">
+          <h2 className="mb-12 text-center font-serif text-3xl leading-tight tracking-tight text-foreground sm:text-4xl">
+            Domande frequenti
+          </h2>
+          <div className="mx-auto mt-12 max-w-2xl">
+            <Accordion type="single" collapsible className="flex flex-col gap-4 w-full">
+              <AccordionItem value="item-1" className="rounded-lg border border-border/60 bg-secondary/20 px-6 py-2 border-b">
+                <AccordionTrigger className="text-lg font-medium text-foreground hover:no-underline">
+                  È davvero tutto gratis?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-base leading-relaxed">
+                  Sì! Il piano Free include tutto ciò che serve per organizzare la tua giornata senza limiti di tempo. Le funzionalità premium arriveranno in futuro per chi desidera opzioni avanzate.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-2" className="rounded-lg border border-border/60 bg-secondary/20 px-6 py-2 border-b">
+                <AccordionTrigger className="text-lg font-medium text-foreground hover:no-underline">
+                  Cosa significa "Modello AI base"?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-base leading-relaxed">
+                  MyTaskly usa un'intelligenza artificiale veloce e reattiva, perfetta per comprendere le tue richieste quotidiane e trasformarle istantaneamente in task organizzati.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-3" className="rounded-lg border border-border/60 bg-secondary/20 px-6 py-2 border-b">
+                <AccordionTrigger className="text-lg font-medium text-foreground hover:no-underline">
+                  Posso usare MyTaskly su più dispositivi?
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground text-base leading-relaxed">
+                  Certo. Tutti i tuoi dati sono sincronizzati in tempo reale tra l'app principale e il bot di Telegram, ovunque tu sia.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>

@@ -1,29 +1,19 @@
-import { Github, Twitter, MessageSquare, BookOpen, Code, Bot, Heart, Zap } from "lucide-react"
+import { Github, Code, Bot, Heart, Zap } from "lucide-react"
 
 const footerLinks = {
   product: [
-    { label: "Funzionalità", href: "#" },
-    { label: "Prezzi", href: "#" },
-    { label: "Integrazioni", href: "#" },
-    { label: "Roadmap", href: "#" },
-    { label: "Changelog", href: "#" },
+    { label: "Home", href: "/" },
+    { label: "Funzionalità", href: "/#funzionalita" },
+    { label: "Prezzi", href: "/prezzi" },
+    { label: "Download", href: "/download" },
   ],
   company: [
     { label: "Chi siamo", href: "#" },
-    { label: "Blog", href: "#" },
-    { label: "Carriere", href: "#" },
     { label: "Contatti", href: "#" },
-  ],
-  resources: [
-    { label: "Documentazione", href: "#" },
-    { label: "API Reference", href: "#" },
-    { label: "Community", href: "#" },
-    { label: "Status", href: "#" },
   ],
   legal: [
     { label: "Privacy Policy", href: "#" },
     { label: "Termini di servizio", href: "#" },
-    { label: "Cookie Policy", href: "#" },
   ],
 }
 
@@ -31,7 +21,7 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-border/60 bg-secondary/20">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-10">
-        <div className="grid grid-cols-2 gap-10 sm:grid-cols-4 lg:gap-8">
+        <div className="grid grid-cols-2 gap-10 sm:grid-cols-3 lg:gap-8">
           {/* Product */}
           <div>
             <h3 className="mb-4 font-medium text-foreground">Prodotto</h3>
@@ -51,20 +41,6 @@ export function SiteFooter() {
             <h3 className="mb-4 font-medium text-foreground">Azienda</h3>
             <ul className="space-y-3 text-sm">
               {footerLinks.company.map((link) => (
-                <li key={link.label}>
-                  <a href={link.href} className="text-muted-foreground transition-colors hover:text-foreground">
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Resources */}
-          <div>
-            <h3 className="mb-4 font-medium text-foreground">Risorse</h3>
-            <ul className="space-y-3 text-sm">
-              {footerLinks.resources.map((link) => (
                 <li key={link.label}>
                   <a href={link.href} className="text-muted-foreground transition-colors hover:text-foreground">
                     {link.label}
@@ -118,25 +94,21 @@ export function SiteFooter() {
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://www.tiktok.com/@thegabry848"
               className="text-muted-foreground transition-colors hover:text-foreground"
-              aria-label="Twitter"
+              aria-label="TikTok"
             >
-              <Twitter className="h-5 w-5" />
-            </a>
-            <a
-              href="https://discord.com"
-              className="text-muted-foreground transition-colors hover:text-foreground"
-              aria-label="Discord"
-            >
-              <MessageSquare className="h-5 w-5" />
-            </a>
-            <a
-              href="#"
-              className="text-muted-foreground transition-colors hover:text-foreground"
-              aria-label="Documentation"
-            >
-              <BookOpen className="h-5 w-5" />
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="h-5 w-5"
+              >
+                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+              </svg>
             </a>
           </div>
         </div>
