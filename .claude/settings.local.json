@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx next *)"
+      "Bash(npx next *)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(git commit *)"
     ]
   }
 }

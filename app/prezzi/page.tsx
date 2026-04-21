@@ -62,14 +62,14 @@ export default function PricingPage() {
 
       <section className="relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 py-24 text-center lg:px-10 lg:py-32">
-          <h1 className="mx-auto max-w-3xl font-serif text-5xl leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+          <h1 className="mx-auto max-w-3xl font-serif text-4xl sm:text-5xl leading-[1.05] tracking-tight text-foreground lg:text-7xl">
             Scegli il tuo piano.
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-pretty text-muted-foreground">
             Inizia gratis. Scala quando ti serve.
           </p>
 
-          <div className="mt-16 flex justify-center">
+          <div className="mt-16 flex flex-col items-center justify-center gap-8 md:flex-row md:items-stretch">
             {plans.map((plan) => (
               <div
                 key={plan.name}

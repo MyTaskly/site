@@ -27,20 +27,20 @@ const features = [
     description:
       "Parla o scrivi come faresti con un amico. L'AI capisce, organizza e mette tutto al posto giusto — senza che tu debba pensarci.",
     screen: {
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Chat%20testuale-APjzhsxSBz1Vew8EaZcC81hmGKPyyx.png",
+      src: "screens/Chat testuale.png",
       alt: "Chat AI di MyTaskly",
     },
   },
-  {
-    icon: Bell,
-    title: "Non dimentichi più niente",
-    description:
-      "Promemoria intelligenti che arrivano quando servono davvero. Non alle 9 di mattina quando sei già in corsa.",
-    screen: {
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Assistente%20vocale-Cmle6k2cuFA1fWBaBohoZW0rojd4tX.png",
-      alt: "Promemoria intelligenti di MyTaskly",
-    },
-  },
+  // {
+  //   icon: Bell,
+  //   title: "Non dimentichi più niente",
+  //   description:
+  //     "Promemoria intelligenti che arrivano quando servono davvero. Non alle 9 di mattina quando sei già in corsa.",
+  //   screen: {
+  //     src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Assistente%20vocale-Cmle6k2cuFA1fWBaBohoZW0rojd4tX.png",
+  //     alt: "Promemoria intelligenti di MyTaskly",
+  //   },
+  // },
   {
     icon: Send,
     title: "Telegram è già aperto. Usalo.",
@@ -57,7 +57,7 @@ const features = [
     description:
       "Sincronizzato con Google Calendar in tempo reale. Apri la giornata — è già organizzata.",
     screen: {
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Calendario-TgE5cFjoJLeKBJrsghjSMXOHUFSS2S.png",
+      src: "screens/Calendario.png",
       alt: "Calendario integrato di MyTaskly",
     },
   },
@@ -67,7 +67,7 @@ const features = [
     description:
       "Un'idea mentre cammini, un appunto durante una call. Le note di MyTaskly sono sempre a un tap di distanza.",
     screen: {
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Categorie-huFeQj4eVw9sQ2yVsNK8OANuwtdS4b.png",
+      src: "screens/Note.png",
       alt: "Note veloci di MyTaskly",
     },
   },
@@ -89,7 +89,7 @@ export default function FunzionalitaPage() {
       {/* ── Hero ── */}
       <section className="border-b border-border/60">
         <div className="mx-auto max-w-7xl px-6 py-24 text-center lg:px-10 lg:py-32">
-          <h1 className="mx-auto max-w-4xl font-serif text-5xl leading-[1.05] tracking-tight text-balance text-foreground sm:text-6xl lg:text-7xl">
+          <h1 className="mx-auto max-w-4xl font-serif text-4xl sm:text-5xl leading-[1.05] tracking-tight text-balance text-foreground lg:text-7xl">
             Parla e MyTaskly crea e organizza i{" "}
             <em className="italic">tuoi impegni.</em>
           </h1>
@@ -185,7 +185,7 @@ export default function FunzionalitaPage() {
       {/* ── CTA finale ── */}
       <section className="border-t border-border/60 bg-secondary/40">
         <div className="mx-auto max-w-7xl px-6 py-24 text-center lg:px-10 lg:py-32">
-          <h2 className="mx-auto max-w-4xl font-serif text-5xl leading-tight tracking-tight text-balance text-foreground sm:text-6xl lg:text-7xl">
+          <h2 className="mx-auto max-w-4xl font-serif text-4xl sm:text-5xl leading-tight tracking-tight text-balance text-foreground lg:text-7xl">
             Pronto a smettere di dimenticare?
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-pretty text-muted-foreground sm:text-lg">

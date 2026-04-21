@@ -130,7 +130,7 @@ export function FeaturesScrollSection() {
         {/* Scroll area */}
         <div className="mt-0 grid grid-cols-1 gap-16 lg:mt-0 lg:grid-cols-12 lg:gap-12">
           {/* Sticky phone */}
-          <div className="order-1 lg:order-2 lg:col-span-5 xl:col-span-6">
+          <div className="hidden lg:block lg:order-2 lg:col-span-5 xl:col-span-6">
             <div className="lg:sticky lg:top-0 lg:flex lg:h-screen lg:items-center lg:justify-center">
               <div className="relative mx-auto w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[320px] xl:max-w-[340px]">
                 <div className="relative overflow-hidden rounded-[2.5rem] border-[12px] border-foreground bg-foreground shadow-2xl">
@@ -164,7 +164,7 @@ export function FeaturesScrollSection() {
             </div>
           </div>
 
-          {/* Scrolling text column */}
+          {/* Scrolling text column with inline images for mobile */}
           <div className="order-2 lg:order-1 lg:col-span-7 xl:col-span-6">
             <ul className="flex flex-col">
               {features.map((feature, index) => (
@@ -176,10 +176,23 @@ export function FeaturesScrollSection() {
                   data-index={index}
                   className="flex min-h-[70vh] flex-col justify-center py-12 lg:min-h-[85vh] lg:py-20"
                 >
-                  <h3 className="mt-5 font-serif text-3xl leading-tight tracking-tight text-balance text-foreground sm:text-4xl lg:text-5xl">
+                  <div className="lg:hidden w-full max-w-[240px] mx-auto mb-10">
+                    <div className="relative overflow-hidden rounded-[2.25rem] border-[10px] border-foreground bg-foreground shadow-xl">
+                      <div className="relative aspect-[9/19.5] w-full overflow-hidden rounded-[1.5rem] bg-background">
+                        <Image
+                          src={feature.image.src || "/placeholder.svg"}
+                          alt={feature.image.alt}
+                          fill
+                          sizes="240px"
+                          className="object-cover"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <h3 className="mt-5 font-serif text-3xl leading-tight tracking-tight text-balance text-foreground sm:text-4xl lg:text-5xl text-center lg:text-left">
                     {feature.title}
                   </h3>
-                  <p className="mt-6 max-w-lg text-base leading-relaxed text-pretty text-muted-foreground sm:text-lg">
+                  <p className="mt-6 max-w-lg text-base leading-relaxed text-pretty text-muted-foreground sm:text-lg text-center lg:text-left mx-auto lg:mx-0">
                     {feature.description}
                   </p>
                 </li>

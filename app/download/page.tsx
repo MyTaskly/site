@@ -9,7 +9,7 @@ export default function DownloadPage() {
 
       <section className="relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 py-24 text-center lg:px-10 lg:py-36">
-          <h1 className="mx-auto max-w-4xl font-serif text-5xl leading-[1.05] tracking-tight text-foreground sm:text-6xl lg:text-7xl xl:text-[5.5rem]">
+          <h1 className="mx-auto max-w-4xl font-serif text-4xl sm:text-5xl leading-[1.05] tracking-tight text-foreground lg:text-7xl xl:text-[5.5rem]">
             Inizia a usare la tua giornata, non a organizzarla.
           </h1>
 

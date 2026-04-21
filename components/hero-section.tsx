@@ -19,22 +19,22 @@ const screens = [
 export function HeroSection() {
   return (
     <section className="relative overflow-hidden">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 pt-16 pb-[63px] lg:grid-cols-12 lg:gap-8 lg:px-10 lg:pt-24 lg:pb-[63px]">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-10 px-6 pt-12 pb-16 lg:grid-cols-12 lg:gap-8 lg:px-10 lg:pt-24 lg:pb-[63px]">
         {/* Copy */}
-        <div className="lg:col-span-6 xl:col-span-7">
-          <h1 className="mt-6 font-serif text-5xl leading-[1.05] tracking-tight text-balance text-foreground sm:text-6xl lg:text-7xl xl:text-[88px]">
+        <div className="lg:col-span-6 xl:col-span-7 flex flex-col items-center text-center sm:items-start sm:text-left">
+          <h1 className="mt-2 sm:mt-6 font-serif text-[2.75rem] leading-[1.05] tracking-tight text-balance text-foreground sm:text-5xl lg:text-7xl xl:text-[88px]">
             Organizza la tua <br className="hidden sm:block" />
             giornata <em className="italic">parlando</em>.
           </h1>
 
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-pretty text-muted-foreground sm:text-lg">
+          <p className="mt-4 sm:mt-6 max-w-xl text-[1.05rem] leading-relaxed text-pretty text-muted-foreground sm:text-lg">
             Dì cosa devi fare e MyTaskly organizza automaticamente i tuoi impegni nella giornata.
           </p>
 
-          <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+          <div className="mt-8 flex w-full flex-col gap-4 sm:w-auto sm:flex-row sm:items-center">
             <Link
-              href="#"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-7 py-4 text-base font-medium text-background transition-transform hover:-translate-y-0.5"
+              href="/download"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-foreground px-8 py-4 text-base font-medium text-background transition-transform hover:-translate-y-0.5 sm:w-auto"
             >
               Scarica gratis ora
               <svg
@@ -52,15 +52,14 @@ export function HeroSection() {
                 <path d="m12 5 7 7-7 7" />
               </svg>
             </Link>
-            <span className="text-sm text-muted-foreground">Disponibile su iOS &amp; Android</span>
           </div>
 
 
         </div>
 
         {/* Visual: 3 tilted phone screens */}
-        <div className="relative lg:col-span-6 xl:col-span-5">
-          <div className="relative mx-auto h-[520px] w-full max-w-md sm:h-[600px] lg:h-[640px]">
+        <div className="relative mt-8 sm:mt-0 lg:col-span-6 xl:col-span-5">
+          <div className="relative mx-auto h-[400px] w-full max-w-[320px] sm:max-w-md sm:h-[600px] lg:h-[640px]">
             {/* Back screen */}
             <PhoneFrame
               src={screens[2].src}
@@ -72,7 +71,7 @@ export function HeroSection() {
             <PhoneFrame
               src={screens[1].src}
               alt={screens[1].alt}
-              className="absolute top-16 left-0 w-[62%] -rotate-[4deg] sm:w-[58%]"
+              className="absolute top-12 sm:top-16 left-0 w-[62%] -rotate-[4deg] sm:w-[58%]"
               priority={false}
             />
             {/* Front screen */}
