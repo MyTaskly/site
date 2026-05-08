@@ -119,7 +119,7 @@ export function SiteFooter() {
           <div className="flex items-center gap-2">
             <span>Made with</span>
             <Heart className="inline h-3 w-3 text-red-500" />
-            <span>by a 16 y/o developer</span>
+            <span>by a 17 y/o developer</span>
           </div>
         </div>
       </div>
