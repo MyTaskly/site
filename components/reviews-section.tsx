@@ -11,14 +11,14 @@ const reviews: Review[] = [
   {
     name: "Paolo",
     role: "Studente",
-    avatar: "/avatar-pencil-1.jpg",
+    avatar: "/avatar-pencil-2.jpg",
     quote:
       "Mi è stata molto utile per riuscire ad ottimizzare i tempi, rigurdando gli impegni quotidiani",
   },
   {
-    name: "Luca De Santis",
-    role: "Studente universitario",
-    avatar: "/avatar-pencil-2.jpg",
+    name: "Giulia Rinaldi",
+    role: "Studentessa universitaria",
+    avatar: "/avatar-pencil-1.jpg",
     quote:
       "Tra lezioni, scadenze e vita sociale avevo perso il controllo. Adesso dico 'ricordami la verifica di mercoledì' e tutto finisce nel posto giusto.",
   },
